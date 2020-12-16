@@ -25,9 +25,9 @@ header {
     width: 60vw;
 }
 .logo > img {
+    max-width: 170px;
     width: 50%;
     height: 50%;
-    max-width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,9 +63,10 @@ nav {
 }
 
 body {
-    background: #00C9FF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FEAC5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     font-family: 'Patrick Hand', cursive;
     margin-top:150px;
 }
@@ -131,7 +132,6 @@ body {
     justify-content: center;
     height: 125px;
     width: 20vw;
-    color: darkorange;
 }
 .img--icon {
     height: 100px;
@@ -145,12 +145,125 @@ body {
     width: 80vw;
     padding: 5px;
 }
-
 #how-it-works {
     margin-top: 50px;
     display: flex;
     justify-content: center;
+}
+#how-it-works > iframe {
+    max-width: 560px;
+    width: 100%;
+}
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%  / 3);
+    margin: 10px;
+    border: 3px solid rgb(252, 249, 249);
+    border-radius: 3px;
+}
+.level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.product > ol > li {
+    padding: 4px 0;
+}
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+footer > ul > li > a {
+    color: black;
+    padding: 0 10px;
+}
+footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1em;
+    color: #444;
+}
+
+@media screen and (max-width: 600px){
+    header {
+        font-size: 12px;
+    }
+    .menu-item{
+        list-style: none;
+        flex: 1;
+        outline: 1px solid rgb(0, 255, 55);
+        line-height: 1.5rem;
+        width:4.5rem;
+        text-align: center;
+    }
+    .logo {
+        margin-top: 15px;
+        position: relative;
+    }
+    .logo > img {
+        margin: 0 auto;
+        height: 90px;
+        width: 110px;
+    }
+    nav {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 50px;
+    }
+    nav li {
+        padding-bottom: 5px;
+    }
+    nav > ul {
+        flex-direction: column;
+    }
+    #data {
+        margin-top: 120px;
+    }
+    #features {
+        margin-top: 0;
+    }
+    #features .icon {
+        display: none;
+    }
+    #features .desc {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        height: 150px;
+    }
+    #pricing {
+        flex-direction: column;
+    }
+    .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
   }
+  
   
 
 
