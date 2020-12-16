@@ -14,13 +14,12 @@ Angus Fuego is a page designed for the sale of both water and electric guitars, 
 
 ## Previous knowledge
 
-Basic structure
+### Basic structure
 ![image](https://www.monografias.com/trabajos97/comandos-html/image001.png)
 
-
-Basic text control labels
+### Basic text control labels
 ![image](https://www.monografias.com/trabajos97/comandos-html/image002.jpg)
 
-Links and images
+### Links and images
 ![image](https://www.monografias.com/trabajos97/comandos-html/image003.jpg)
 
