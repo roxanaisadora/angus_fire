@@ -123,11 +123,15 @@ body {
     cursor: pointer;
     font-family: "Lora", serif;
     height: 50px;
-    width: 120px;
+    width: 160px;
     letter-spacing: 1px;
     margin: 10px 0px;
     text-shadow: 1px 1px 8px black;
 }  
+.btn:hover {
+    background-color: rgba(128, 17, 243, 0.2);
+    font-size: 24px;
+}
 #features {
     margin-top: 30px;
 } 
