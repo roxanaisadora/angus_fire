@@ -13,7 +13,7 @@ header {
     top: 0;
     height: 120px;
     width: 100%;
-    padding: 0px 20px;
+    padding: 0px 20px ;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -81,7 +81,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 200px;
+    height: 400px;
     margin-top: 50px;
 }
 #data > h2 {
@@ -89,6 +89,12 @@ body {
     word-wrap: break-word;
     font-size: 30px;
     font-family: 'Love Ya Like A Sister', cursive;
+}
+.secondary {
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 30px;
+    padding-top: 25px;
 }
 .input {
     background-color: transparent;
@@ -125,6 +131,7 @@ body {
 } 
 .grid {
     display: flex;
+    margin: 50px;
 }
 #features .icon {
     display: flex;
@@ -137,13 +144,14 @@ body {
     height: 100px;
     width: 100px;
 }
-#features .desc {
+.desc {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 125px;
-    width: 80vw;
+    width: 90vw;
     padding: 5px;
+    font-size:22px;
 }
 #how-it-works {
     margin-top: 50px;
@@ -211,8 +219,11 @@ footer > span {
         flex: 1;
         outline: 1px solid rgb(0, 255, 55);
         line-height: 1.5rem;
-        width:4.5rem;
+        width:8rem;
         text-align: center;
+    }
+    .menu-item:hover {
+        font-size: 18px;
     }
     .logo {
         margin-top: 15px;
@@ -247,11 +258,15 @@ footer > span {
     #features .icon {
         display: none;
     }
-    #features .desc {
+    .grid {
+        margin: 5px;
+    }
+    .desc {
         width: 100%;
         text-align: center;
         padding: 0;
         height: 150px;
+        font-size:15px;
     }
     #pricing {
         flex-direction: column;

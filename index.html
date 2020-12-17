@@ -23,10 +23,12 @@
         </header>
         <div class="container">
             <section id="data">
+            <h1 id="secondary" class="secondary">hola</h1>
             <h2>★ Fame is in your hands ★</h2>
                 <form id="form" action="https://www.freecodecamp.com/email-submit">
                     <input class="input" name="email" id="email" type="email" placeholder="Enter your email address" required="">
                     <input id="submit" type="submit" value="Get Started" class="btn">
+                    
                 </form>
             </section>
         </div>
@@ -82,7 +84,7 @@
                         <li>Acústica Grand Concert</li>
                         <li>Acústica Concert</li>
                     </ol>
-                    <button id="btn1" class="btn" >Select</button>
+                    <button class="btn" onClick="confirmar()">Select</button>
                 </div>
                 <div class="product" id="bass">
                     <div class="level">Electric guitars</div>
@@ -94,7 +96,7 @@
                         <li>Semi-acoustic guitar</li>
                         <li>Flying V</li>
                     </ol>
-                    <button id="btn2" class="btn" >Select</button>
+                    <button class="btn" onClick="confirmar()">Select</button>
                 </div>
                     <div class="product" id="valve">
                     <div class="level">guitar accessories</div>
@@ -106,7 +108,7 @@
                         <li>Dishwasher</li>
                         <li>Pockets for wireless transmitters</li>
                     </ol>
-                    <button id="btn3" class="btn" >Select</button>
+                    <button class="btn" onClick="confirmar()">Select</button>
                 </div>
             </section>
             <footer>
@@ -119,5 +121,7 @@
             </footer>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
