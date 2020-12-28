@@ -165,8 +165,7 @@ body {
     justify-content: center;
 }
 #how-it-works > iframe {
-    max-width: 560px;
-    width: 100%;
+    max-width: 1060px;
 }
 #pricing {
     margin-top: 60px;
@@ -282,6 +281,9 @@ footer > span {
         width: 100%;
         margin: 0 auto;
         margin-bottom: 10px;
+    }
+    #how-it-works > iframe {
+        max-width: 500px;
     }
   }
   

@@ -71,22 +71,23 @@
                 </div>
             </section>
             <section id="how-it-works">
-                <iframe id="video" width="950" height="330" src="https://www.youtube.com/embed/-OKeDLeUfJ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="video" width="1050" height="530" src="https://www.youtube.com/embed/-OKeDLeUfJ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
             <section id="pricing">
-                <div class="product" id="tenor">
+                <div class="product">
                     <div class="level">Acoustic guitar</div>
                     <h2>From $100 to $500</h2>
                     <ol>
-                        <li>Acústica Jumbo</li>
-                        <li>Acústica Dreadnought</li>
-                        <li>Acústica Auditorium</li>
-                        <li>Acústica Grand Concert</li>
-                        <li>Acústica Concert</li>
+                        <li>Jumbo</li>
+                        <li>Dreadnought</li>
+                        <li>Auditorium</li>
+                        <li>Grand Concert</li>
+                        <li>Concert</li>
                     </ol>
-                    <button class="btn" onClick="confirmar()">Select</button>
+                    <button class="btn"><a href="/section/acustic.html"> Select </a></button>
+                    
                 </div>
-                <div class="product" id="bass">
+                <div class="product">
                     <div class="level">Electric guitars</div>
                     <h2>From $200 to $1000</h2>
                     <ol>
@@ -96,19 +97,19 @@
                         <li>Semi-acoustic guitar</li>
                         <li>Flying V</li>
                     </ol>
-                    <button class="btn" onClick="confirmar()">Select</button>
+                    <button class="btn"><a href="/section/electric.html"> Select </a></button>
                 </div>
-                    <div class="product" id="valve">
+                    <div class="product">
                     <div class="level">guitar accessories</div>
                     <h2>From $20 to $800</h2>
                     <ol>
                         <li>Guitar stand</li>
                         <li>Clamp tuner</li>
-                        <li>Tine holder</li>
-                        <li>Dishwasher</li>
-                        <li>Pockets for wireless transmitters</li>
+                        <li>Guitar tuner</li>
+                        <li>Amplifier</li>
+                        <li>Guitar picks</li>
                     </ol>
-                    <button class="btn" onClick="confirmar()">Select</button>
+                    <button class="btn"><a href="/section/accessories.html"> Select </a></button>
                 </div>
             </section>
             <footer>
