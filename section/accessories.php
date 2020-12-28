@@ -14,7 +14,7 @@
         </div>
         <nav id="nav-bar">
             <ul class="menu">
-                <li class = "menu-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class = "menu-item"><a class="nav-link" href="../index.php">Home</a></li>
             </ul>
         </nav>
     </header>
