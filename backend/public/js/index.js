@@ -10,6 +10,6 @@
 /*!******************************!*\
   !*** ./frontend/js/index.js ***!
   \******************************/
-eval("(async () => {\n        const{value:name} = await Swal.fire({\n        title: 'Bienvenido !!!',\n        input: 'text',\n        inputLabel: 'Your firts name',\n        inputPlaceholder: 'Enter your firts name'\n    });\n    var elem = document.getElementById('secondary').innerHTML = `Welcome, ${name} nice to have you here 😊`;\n})()\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://angus_fire/./frontend/js/index.js?");
+eval("(async () => {\n        const{value:name} = await Swal.fire({\n        title: 'Bienvenido !!!',\n        input: 'text',\n        inputLabel: 'Your firts name',\n        inputPlaceholder: 'Enter your firts name'\n    });\n    document.getElementById('secondary').innerHTML = `Welcome, ${name} nice to have you here 😊`;\n})()\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://angus_fire/./frontend/js/index.js?");
 /******/ })()
 ;

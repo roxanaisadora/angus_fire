@@ -15,10 +15,5 @@ router.post ('/', async (req, res)=> {
     res.json({message:'User saved'})
 })
 
-router.delete('/:id', async (req, res)=> {
-    const userdelete = await User.findByIdAndDelete(req.params.id);
-    console.log(userdelete);
-    res.send('deleting');
-})
 
 module.exports = router;

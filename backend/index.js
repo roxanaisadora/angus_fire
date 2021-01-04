@@ -27,7 +27,8 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
 // Routes
-app.use('/api/login',require('./routes/user'))
+app.use('/api/login',require('./routes/user'));
+app.use('/api/purchases',require('./routes/purchases'))
 
 //Static files
 app.use(express.static(path.join(__dirname, 'public')))
