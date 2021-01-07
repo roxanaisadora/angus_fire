@@ -6,6 +6,7 @@ const express = require('express');
 const morgan = require ('morgan');
 const multer = require ('multer');
 const path = require ('path');
+const cors = require ('cors');
 
 //Initialization
 const app = express();
@@ -25,9 +26,10 @@ const storage = multer.diskStorage({
 app.use(multer({storage}).single('image'));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
+app.use(cors());
 
 // Routes
-app.use('/api/login',require('./routes/user'));
+app.use('/api/survey',require('./routes/survey'));
 app.use('/api/purchases',require('./routes/purchases'))
 
 //Static files
