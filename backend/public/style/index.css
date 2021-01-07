@@ -142,10 +142,24 @@ body {
 }
 #how-it-works {
     margin-top: 50px;
+    align-items: center;
     display: flex;
     justify-content: center;
 }
+.title--works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+    width: 100%;
+}
+
 #how-it-works > iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     max-width: 900px;
     height: 500px;
 }
