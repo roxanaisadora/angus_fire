@@ -18,10 +18,25 @@
             </ul>
         </nav>
     </header>
-    <section class="confirmation">
-        <div id="confirmation"></div>
-    </section>
+    <div id="container">
+        <h2>Shopping</h2>
+        <form id="form-email">
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+            </div>
+            <div class="form-btn">
+                <button type="submit" id="submit" class="btn">
+                    Submit
+                </button>
+                <input type="button" value="Refresh" onclick="location.reload()"/>
+            </div>
+        </form>
+        
+    </div>
+    
+    <div id="purchas-cards"></div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="../js/shopping.js"></script>
+    <script type="module" src="../js/shopping.js"></script>
 </body>
 </html>

@@ -30,8 +30,9 @@ document.getElementById("myBtn")
               }
               const product = "Stratocaster"
               const code = "LOJMN23641"
-              const description = "The American Ultra series of guitars and basses is the most advanced for demanding musicians who demand the ultimate in precision, performance and tone. The American Ultra Stratocaster features a unique MODERN D neck profile with rounded fingerboard edges for hours of comfort, and the neck heel shape allows easy access to the higher register."
+              const description = "The American Ultra series of guitars and basses is the most advanced for demanding musicians who demand the ultimate in precision."
               const cant = 1
+              const imagePath = "https://www.musik-produktiv.es/pic-010107419xxl/fender-custom-shop-masterbuilt-59-stratocaster.jpg"
 
               const formData = new FormData();
               formData.append('product',product);
@@ -39,6 +40,7 @@ document.getElementById("myBtn")
               formData.append('cant',cant);
               formData.append('email',email);
               formData.append('description',description);
+              formData.append('imagePath',imagePath);
 
               const purchasService = new PurchasService()
               purchasService.postPurchas(formData)
@@ -76,8 +78,9 @@ document.getElementById("myBtn_1")
           }
           const product = "Telecaster"
           const code = "JDMJK36415"
-          const description = "The Fender Telecaster is a world famous solid body electric guitar, called THE TABLE in its early days. It is characterized by the simplicity in its design and by the sound obtained from its two single coil or single coil pickups, which appear in the vast majority of its models instead of the double coil or humbuckers that later appeared in other guitars."
+          const description = "The Fender Telecaster is a world famous solid body electric guitar, called THE TABLE in its early days."
           const cant = 1
+          const imagePath = "https://www.tomleemusic.ca/media/catalog/product/cache/image/1000x1320/e9c3970ab036de70892d86c6d221abfe/2/1/212026.png"
 
           const formData = new FormData();
           formData.append('product',product);
@@ -85,6 +88,7 @@ document.getElementById("myBtn_1")
           formData.append('cant',cant);
           formData.append('email',email);
           formData.append('description',description);
+          formData.append('imagePath',imagePath);
 
           const purchasService = new PurchasService()
           purchasService.postPurchas(formData)
@@ -122,8 +126,9 @@ document.getElementById("myBtn_2")
               }
               const product = "Superstrat"
               const code = "PALDO6952"
-              const description = "Superstrat is the name given to a type of electric guitar that resembles a Fender Stratocaster in design but with clearly distinguishable differences from a standard Stratocaster, usually to cater for a different style of playing. Typical differences are a more pointed design, with more aggressive shapes on the body and neck, different woods, greater number of frets, use of humbucker pickups and tremolo locking systems, commonly the Floyd Rose."
+              const description = "Superstrat is the name given to a type of electric guitar that resembles a Fender Stratocaster in design but with clearly distinguishable differences from a standard Stratocaster."
               const cant = 1
+              const imagePath = "https://images-na.ssl-images-amazon.com/images/I/71TFu4WSHML._AC_SL1500_.jpg"
 
               const formData = new FormData();
               formData.append('product',product);
@@ -131,6 +136,7 @@ document.getElementById("myBtn_2")
               formData.append('cant',cant);
               formData.append('email',email);
               formData.append('description',description);
+              formData.append('imagePath',imagePath);
 
               const purchasService = new PurchasService()
               purchasService.postPurchas(formData)
@@ -168,8 +174,9 @@ document.getElementById("myBtn_3")
               }
               const product = "Semi-acoustic"
               const code = "KDUSL25689"
-              const description = " Is a type of electric guitar that originates from the 1930s. It has both a sound box and one or more electric pickups. This is not the same as an acoustic-electric guitar, which is an acoustic guitar with the addition of pickups or other means of amplification, added by either the manufacturer or the player."
+              const description = " Is a type of electric guitar that originates from the 1930s. It has both a sound box and one or more electric pickups."
               const cant = 1
+              const imagePath = "https://d1aeri3ty3izns.cloudfront.net/media/38/383117/1200/preview.jpg"
 
               const formData = new FormData();
               formData.append('product',product);
@@ -177,6 +184,7 @@ document.getElementById("myBtn_3")
               formData.append('cant',cant);
               formData.append('email',email);
               formData.append('description',description);
+              formData.append('imagePath',imagePath);
 
               const purchasService = new PurchasService()
               purchasService.postPurchas(formData)
@@ -214,8 +222,9 @@ document.getElementById("myBtn_3")
               }
               const product = "CONCERT GUITAR"
               const code = "JCMSO96324"
-              const description = "Introduced in 1958 and only made in limited quantities, the Gibson Flying V has taken flight over the years along with legions of followers. This Flying V carries heritage to new heights. The Antique Natural finish, mahogany body and slim taper neck with rosewood fingerboard provide classic looks, sound and playability. A special set of calibrated Burstbucker 2 (neck) and Burstbucker 3 (bridge) pickups provide that perfect mix of volume, tone and power."
+              const description = "This Flying V carries heritage to new heights. The Antique Natural finish, mahogany body and slim taper neck with rosewood fingerboard provide classic looks, sound and playability.."
               const cant = 1
+              const imagePath = "https://www.audiomusica.com.pe/pub/media/catalog/product/2/0/205213_guitarra-electrica-freeman-flying-v-frfv300-color-negro.jpg"
 
               const formData = new FormData();
               formData.append('product',product);
@@ -223,6 +232,7 @@ document.getElementById("myBtn_3")
               formData.append('cant',cant);
               formData.append('email',email);
               formData.append('description',description);
+              formData.append('imagePath',imagePath);
 
               const purchasService = new PurchasService()
               purchasService.postPurchas(formData)

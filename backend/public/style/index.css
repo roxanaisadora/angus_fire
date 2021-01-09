@@ -141,7 +141,7 @@ body {
     font-size:22px;
 }
 #how-it-works {
-    margin-top: 50px;
+    margin-top: 10px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -151,15 +151,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 50px;
-    width: 100%;
+    text-align: center;
 }
-
+.title--works > h1{
+    margin-top: 20px;
+    font-size: 50px;
+}
+.title--works > p{
+    font-size: 30px;
+}
 #how-it-works > iframe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     max-width: 900px;
     height: 500px;
 }
@@ -344,12 +345,18 @@ footer > span {
         width: 100%;
         text-align: center;
         padding: 0;
-        height: 150px;
+        height: 115px;
         font-size:15px;
     }
     #how-it-works > iframe {
         width: 500px;
         height: 350px;
+    }
+    .title--works > h1{
+    font-size: 30px;
+    }
+    .title--works > p{
+        font-size: 20px;
     }
     #pricing {
         flex-direction: column;
@@ -359,6 +366,9 @@ footer > span {
         width: 100%;
         margin: 0 auto;
         margin-bottom: 10px;
+    }
+    .text-center {
+    font-size: 30px;
     }
   }
   

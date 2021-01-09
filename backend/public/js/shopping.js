@@ -1,28 +1,19 @@
-import PurchasService from '../services/PurchasService.js';
+import UIShopping from './UIShopping.js'
+const uiShopping = new UIShopping();
 
-document.getElementById("myBtn")
-    .addEventListener("click", () =>{
-        const product = "a"
-        const code = "a"
-        const email = "a"
-        const description = "a"
-        const cant = 1
+document.addEventListener('DOMContentLoaded', () => {
+  uiShopping.render();
+})
 
-        const formData = new FormData();
-        formData.append('product',product);
-        formData.append('code',code);
-        formData.append('cant',cant);
-        formData.append('email',email);
-        formData.append('description',description);
+document.getElementById('purchas-cards')
+  .addEventListener('click', e => {
+    if (e.target.classList.contains('delete')) {
+      //console.log(e.target.getAttribute('_id'))
+      uiShopping.deletePurchas(e.target.getAttribute('_id'));
+    }
+    e.preventDefault();
+    
+  });
 
-        const purchasService = new PurchasService()
-        purchasService.postPurchas(formData)
 
-        Swal.fire({
-          position: 'top-end',
-          icon: 'success',
-          title: 'purchase made',
-          showConfirmButton: false,
-          timer: 1500
-        })
-    }); 
+ 

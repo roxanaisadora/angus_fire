@@ -6,6 +6,7 @@ const PurchasesNewSchema = new Schema({
     cant: {type: Number, required:true},
     email: {type: String, required:true},
     description:{type: String, required:true},
+    imagePath: { type: String, required: true },
     created_at:{type:Date, default: Date.now}
 });
 
