@@ -1,7 +1,7 @@
 class PurchasService {
 
     constructor() {
-        this.URI = `http://localhost:3000/api/purchases`;
+        this.URI = `/api/purchases`;
     }
 
     async getPurchas() {
