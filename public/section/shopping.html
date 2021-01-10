@@ -19,7 +19,7 @@
         </nav>
     </header>
     <div id="container">
-        <h2>Shopping</h2>
+        <h2 class="container-title"> (☞ﾟヮﾟ)☞ Shopping ☜(ﾟヮﾟ☜</h2>
         <form id="form-email">
             <div class="form-group">
                 <label id="email-label" for="email">Email</label>
@@ -29,13 +29,20 @@
                 <button type="submit" id="submit" class="btn">
                     Submit
                 </button>
-                <input type="button" value="Refresh" onclick="location.reload()"/>
             </div>
         </form>
-        
+        <div id="conteiner-cards">
+            <div class="contend-data">
+                <h2 class="title"> Purchases made </h2>
+                <div id="purchas-cards"></div>
+            </div>
+            <div class="contend-data">
+                <h2 class="title-1"> Forms submitted </h2>
+                <div id="form-cards"></div>
+            </div>
+        </div>
     </div>
     
-    <div id="purchas-cards"></div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script type="module" src="../js/shopping.js"></script>
 </body>
