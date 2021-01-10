@@ -236,7 +236,7 @@ document.getElementById('survey-form')
 __webpack_require__.r(__webpack_exports__);
 class SurveyService {
     constructor() {
-        this.URI = `http://localhost:3000/api/survey`;
+        this.URI = `/api/survey`;
     }
     
     async getSurveys() {
