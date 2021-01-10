@@ -9,7 +9,6 @@
     "postinstall": "npm run build",
     "build": "cross-env NODE_ENV=production webpack",
     "server:dev": "webpack-dev-server"
-
   },
   "repository": {
     "type": "git",
