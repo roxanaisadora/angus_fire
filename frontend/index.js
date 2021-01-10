@@ -4,7 +4,7 @@ require('./icons/guitarra.png')
 require('./icons/logo.png')
 require('./icons/material.png')
 require('./icons/quality.png')
-import SurveyService from './services/SurveyService.js'
+import UI from './UI.js'
 
 document.getElementById('survey-form')
     .addEventListener('submit', e => {
@@ -13,16 +13,15 @@ document.getElementById('survey-form')
           const email = document.getElementById('email').value;
           const comments = document.getElementById('comments').value;
 
-          console.log(name,age,email,comments)
-
           const formData = new FormData();
-            formData.append('name', name);
-            formData.append('age', age);
-            formData.append('email', email);
-            formData.append('comments', comments);
+          formData.append('name',name);
+          formData.append('age',age);
+          formData.append('email',email);
+          formData.append('comments',comments);
 
-          const surveyService = new SurveyService()
-          surveyService.postSurvey(formData)
+          const ui = new UI();
+          ui.addNew(formData)
+
           e.preventDefault();
           
           Swal.fire({
