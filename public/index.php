@@ -19,7 +19,7 @@
                     <li class = "menu-item"><a href="#how-it-works">How it works</a></li>
                     <li class = "menu-item"><a href="#pricing">Pricing</a></li>
                     <li class = "menu-item"><a href="#survey">Contact</a></li>
-                    <li class = "menu-item"><a href="/section/shopping.html">Shopping</a></li>
+                    <li class = "menu-item"><a href="/section/shopping.php">Shopping</a></li>
                 </ul>
             </nav>
         </header>
@@ -85,7 +85,7 @@
                         <li>Grand Concert</li>
                         <li>Concert</li>
                     </ol>
-                    <button class="btn"><a href="/section/acustic.html"> Select </a></button>
+                    <button class="btn"><a href="/section/acustic.php"> Select </a></button>
                     
                 </div>
                 <div class="product">
@@ -98,7 +98,7 @@
                         <li>Semi-acoustic guitar</li>
                         <li>Flying V</li>
                     </ol>
-                    <button class="btn"><a href="/section/electric.html"> Select </a></button>
+                    <button class="btn"><a href="/section/electric.php"> Select </a></button>
                 </div>
                     <div class="product">
                     <div class="level">guitar accessories</div>
@@ -110,7 +110,7 @@
                         <li>Amplifier</li>
                         <li>Guitar picks</li>
                     </ol>
-                    <button class="btn"><a href="/section/accessories.html"> Select </a></button>
+                    <button class="btn"><a href="/section/accessories.php"> Select </a></button>
                 </div>
             </section>
             <section id="survey" class="container-form">
