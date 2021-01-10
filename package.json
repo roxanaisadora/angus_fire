@@ -4,9 +4,9 @@
   "description": "## Description",
   "main": "webpack.config.js",
   "scripts": {
-    "server:dev": "nodemon backend/index.js --ignore frontend",
+    "dev": "nodemon backend/index.js --ignore frontend",
     "build": "NODE_ENV=production webpack -p",
-    "dev": "webpack-dev-server --open",
+    "server:dev": "webpack-dev-server --open",
     "postinstall": "npm run build",
     "start": "node backend/index.js"
   },
