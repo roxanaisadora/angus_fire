@@ -1,7 +1,7 @@
 class SurveyService {
 
     constructor() {
-        this.URI = `http://localhost:3000/api/survey`;
+        this.URI = `/api/survey`;
     }
 
     async getSurvey() {
