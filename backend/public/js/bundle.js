@@ -2,34 +2,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./frontend/UI.js":
-/*!************************!*\
-  !*** ./frontend/UI.js ***!
-  \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony import */ var _services_SurveyService_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./services/SurveyService.js */ "./frontend/services/SurveyService.js");
-
-const surveyService = new _services_SurveyService_js__WEBPACK_IMPORTED_MODULE_0__.default()
-
-class UI {
-    async addNew(formData){
-        await surveyService.postSurvey(formData)
-        this.clearForm();
-    }
-    clearForm (){
-        document.getElementById('survey-form').reset();
-    }
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (UI);
-
-/***/ }),
-
 /***/ "./frontend/index.js":
 /*!***************************!*\
   !*** ./frontend/index.js ***!
@@ -37,7 +9,7 @@ class UI {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _UI_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UI.js */ "./frontend/UI.js");
+/* harmony import */ var _services_SurveyService_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./services/SurveyService.js */ "./frontend/services/SurveyService.js");
 __webpack_require__(/*! ./style/index.css */ "./frontend/style/index.css")
 __webpack_require__(/*! ./icons/delivery_fast.png */ "./frontend/icons/delivery_fast.png")
 __webpack_require__(/*! ./icons/guitarra.png */ "./frontend/icons/guitarra.png")
@@ -53,15 +25,16 @@ document.getElementById('survey-form')
           const email = document.getElementById('email').value;
           const comments = document.getElementById('comments').value;
 
+          console.log(name,age,email,comments)
+
           const formData = new FormData();
-          formData.append('name',name);
-          formData.append('age',age);
-          formData.append('email',email);
-          formData.append('comments',comments);
+            formData.append('name', name);
+            formData.append('age', age);
+            formData.append('email', email);
+            formData.append('comments', comments);
 
-          const ui = new _UI_js__WEBPACK_IMPORTED_MODULE_0__.default();
-          ui.addNew(formData)
-
+          const surveyService = new _services_SurveyService_js__WEBPACK_IMPORTED_MODULE_0__.default()
+          surveyService.postSurvey(formData)
           e.preventDefault();
           
           Swal.fire({
@@ -86,11 +59,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 class SurveyService {
-
     constructor() {
-        this.URI = `/api/survey`;
+        this.URI = `http://localhost:3000/api/survey`;
     }
-
+    
+    async getSurveys() {
+        const response = await fetch(this.URI);    
+        const surveys = await response.json();
+        return surveys;
+    }
     async postSurvey(survey) {
         const res = await fetch(this.URI, {
             method: 'POST',
