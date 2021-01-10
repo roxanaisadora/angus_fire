@@ -1,3 +1,9 @@
+require('./style/index.css')
+require('./icons/delivery_fast.png')
+require('./icons/guitarra.png')
+require('./icons/logo.png')
+require('./icons/material.png')
+require('./icons/quality.png')
 import UI from './UI.js'
 
 document.getElementById('survey-form')
