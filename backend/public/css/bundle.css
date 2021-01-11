@@ -179,6 +179,11 @@ body {
     border: 3px solid rgb(252, 249, 249);
     border-radius: 3px;
 }
+.product > img {
+    height: 190px;
+    width: 210px;
+    padding: 10px;
+}
 .level {
     background-color: #ddd;
     color: black;

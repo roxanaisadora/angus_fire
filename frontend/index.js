@@ -6,6 +6,127 @@ require('./icons/material.png')
 require('./icons/quality.png')
 import UI from './UI.js'
 
+document.getElementById("confirm")
+    .addEventListener("click", () =>{
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "Do you want to continue with the purchase!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                'Completed!',
+                'Your purchase has been made.',
+                'success'
+              )
+            }
+          })
+    });
+document.getElementById("confirm1")
+    .addEventListener("click", () =>{
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "Do you want to continue with the purchase!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                'Completed!',
+                'Your purchase has been made.',
+                'success'
+              )
+            }
+          })
+    });
+document.getElementById("confirm2")
+    .addEventListener("click", () =>{
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "Do you want to continue with the purchase!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                'Completed!',
+                'Your purchase has been made.',
+                'success'
+              )
+            }
+          })
+    });
+document.getElementById("confirm3")
+    .addEventListener("click", () =>{
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "Do you want to continue with the purchase!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                'Completed!',
+                'Your purchase has been made.',
+                'success'
+              )
+            }
+          })
+    });
+document.getElementById("confirm4")
+    .addEventListener("click", () =>{
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "Do you want to continue with the purchase!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                'Completed!',
+                'Your purchase has been made.',
+                'success'
+              )
+            }
+          })
+    });
+document.getElementById("confirm5")
+    .addEventListener("click", () =>{
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "Do you want to continue with the purchase!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                'Completed!',
+                'Your purchase has been made.',
+                'success'
+              )
+            }
+          })
+    });
+
 document.getElementById('survey-form')
     .addEventListener('submit', e => {
           const name = document.getElementById('name').value;
