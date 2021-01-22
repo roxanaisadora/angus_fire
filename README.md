@@ -28,7 +28,6 @@ https://angusfire-app.herokuapp.com/
 ### Contact
 ![image](https://user-images.githubusercontent.com/58452664/105558558-d4f02300-5cdc-11eb-9cc5-8697aaa2258d.png)
 ### Data base
-![image](https://user-images.githubusercontent.com/58452664/105558558-d4f02300-5cdc-11eb-9cc5-8697aaa2258d.png)
 #### Form
 ![image](https://user-images.githubusercontent.com/58452664/105559346-e89c8900-5cde-11eb-948d-3ec61824506b.png)
 #### console
