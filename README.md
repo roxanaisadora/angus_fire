@@ -12,7 +12,7 @@ https://angusfire-app.herokuapp.com/
 * Css
 * Javascript
 * Nodejs
-* Mongo Atlas
+* MongoDB Atlas
 * ORM Mongoose
 * Express
 
@@ -27,4 +27,13 @@ https://angusfire-app.herokuapp.com/
 ![image](https://user-images.githubusercontent.com/58452664/105558513-bdb13580-5cdc-11eb-9267-5a0f110c2394.png)
 ### Contact
 ![image](https://user-images.githubusercontent.com/58452664/105558558-d4f02300-5cdc-11eb-9cc5-8697aaa2258d.png)
+### Data base
+![image](https://user-images.githubusercontent.com/58452664/105558558-d4f02300-5cdc-11eb-9cc5-8697aaa2258d.png)
+#### Form
+![image](https://user-images.githubusercontent.com/58452664/105559346-e89c8900-5cde-11eb-948d-3ec61824506b.png)
+#### console
+![image](https://user-images.githubusercontent.com/58452664/105559374-fce08600-5cde-11eb-8611-e9c74fd24dc6.png)
+#### MongoDB Atlas
+![image](https://user-images.githubusercontent.com/58452664/105559395-0d90fc00-5cdf-11eb-9e4a-994c2fa6863c.png)
+
 
